@@ -1,7 +1,6 @@
 import React from "react";
 
 function Button({ text, textcolor, bgcolor, Icon, onClick, fullWidth }) {
-   console.log("re-render");
    return (
       <button
          type="button"
