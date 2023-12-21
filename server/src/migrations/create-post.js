@@ -19,7 +19,7 @@ module.exports = {
          labelCode: {
             type: Sequelize.STRING,
          },
-         adderss: {
+         address: {
             type: Sequelize.STRING,
          },
          attributesId: {
@@ -28,7 +28,7 @@ module.exports = {
          categoryCode: {
             type: Sequelize.STRING,
          },
-         desciption: {
+         description: {
             type: Sequelize.TEXT,
          },
          userId: {
@@ -37,7 +37,7 @@ module.exports = {
          featureId: {
             type: Sequelize.STRING,
          },
-         imagesID: {
+         imagesId: {
             type: Sequelize.STRING,
          },
          createdAt: {

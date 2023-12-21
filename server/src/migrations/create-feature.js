@@ -5,9 +5,8 @@ module.exports = {
       await queryInterface.createTable("Features", {
          id: {
             allowNull: false,
-            autoIncrement: true,
             primaryKey: true,
-            type: Sequelize.INTEGER,
+            type: Sequelize.STRING,
          },
          code: {
             type: Sequelize.STRING,
@@ -24,7 +23,7 @@ module.exports = {
          created: {
             type: Sequelize.DATE,
          },
-         expire: {
+         expired: {
             type: Sequelize.DATE,
          },
          bonus: {

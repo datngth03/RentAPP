@@ -4,7 +4,7 @@ import jwt from "jsonwebtoken";
 import { v4 } from "uuid";
 require("dotenv").config();
 
-const hashPassword = (password) => bcrypt.hashSync(password, bcrypt.genSaltSync(10));
+const hashPassword = (password) => bcrypt.hashSync(password, bcrypt.genSaltSync(5));
 
 export const registerService = ({ phone, name, password }) =>
    new Promise(async (resolve, reject) => {
