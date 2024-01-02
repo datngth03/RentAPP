@@ -5,7 +5,7 @@ import chothuematbang from "../../data/matbang_vanphong.json";
 import chothuecanho from "../../data/chothuecanho.json";
 import nhachothue from "../../data/nhachothue.json";
 import chothuephongtro from "../../data/chothuephongtro.json";
-import generateCode from "../utlis/generateCode";
+import { generateCode } from "../utlis/generateCode";
 import { dataPrice, dataArea } from "../utlis/data";
 import { getNumberFromString, getNumberFromStringV2 } from "../utlis/common";
 require("dotenv").config();
@@ -147,14 +147,6 @@ export const insertService = () =>
             });
          });
 
-         resolve("Done.");
-      } catch (error) {
-         reject(error);
-      }
-   });
-export const createPricesAndAreas = () =>
-   new Promise((resolve, reject) => {
-      try {
          dataPrice.forEach(async (item, index) => {
             await db.Price.create({
                code: item.code,
@@ -169,8 +161,31 @@ export const createPricesAndAreas = () =>
                order: index + 1,
             });
          });
-         resolve("OK");
-      } catch (err) {
-         reject(err);
+
+         resolve("Done.");
+      } catch (error) {
+         reject(error);
       }
    });
+// export const createPricesAndAreas = () =>
+//    new Promise((resolve, reject) => {
+//       try {
+//          dataPrice.forEach(async (item, index) => {
+//             await db.Price.create({
+//                code: item.code,
+//                value: item.value,
+//                order: index + 1,
+//             });
+//          });
+//          dataArea.forEach(async (item, index) => {
+//             await db.Area.create({
+//                code: item.code,
+//                value: item.value,
+//                order: index + 1,
+//             });
+//          });
+//          resolve("OK");
+//       } catch (err) {
+//          reject(err);
+//       }
+//    });

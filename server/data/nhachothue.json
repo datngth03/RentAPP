@@ -19,9 +19,20 @@
          "header": {
             "title": "Phòng trọ Hẻm 526 Phạm Văn Đồng Linh Đông Thủ ĐứcKế bên Khách Sạn Hoà Phát, gần Cầu Gò Dưa.",
             "stars": "2",
-            "nav": { "title": "Chuyên mục: Cho thuê nhà Quận Thủ Đức", "content": "Cho thuê nhà Quận Thủ Đức" },
-            "address": { "class": "post-address", "content": "Địa chỉ: 526/27 Đường Phạm Văn Đồng, Phường Linh Đông, Quận Thủ Đức, Hồ Chí Minh" },
-            "attributes": { "price": "3.3 triệu/tháng", "acreage": "30m2", "published": "Hôm nay", "hashtag": "599068" }
+            "nav": {
+               "title": "Chuyên mục: Cho thuê nhà Quận Thủ Đức",
+               "content": "Cho thuê nhà Quận Thủ Đức"
+            },
+            "address": {
+               "class": "post-address",
+               "content": "Địa chỉ: 526/27 Đường Phạm Văn Đồng, Phường Linh Đông, Quận Thủ Đức, Hồ Chí Minh"
+            },
+            "attributes": {
+               "price": "3.3 triệu/tháng",
+               "acreage": "30m2",
+               "published": "Hôm nay",
+               "hashtag": "599068"
+            }
          },
          "mainContent": {
             "header_section": "Thông tin mô tả",
@@ -77,9 +88,20 @@
          "header": {
             "title": "Chính chủ cần cho thuê nhà nguyên căn giá tốt",
             "stars": "2",
-            "nav": { "title": "Chuyên mục: Cho thuê nhà Quận Thủ Đức", "content": "Cho thuê nhà Quận Thủ Đức" },
-            "address": { "class": "post-address", "content": "Địa chỉ: 108 Ngô Chí Quốc, Phường Bình Chiểu, Quận Thủ Đức, Hồ Chí Minh" },
-            "attributes": { "price": "13 triệu/tháng", "acreage": "68m2", "published": "Hôm nay", "hashtag": "639272" }
+            "nav": {
+               "title": "Chuyên mục: Cho thuê nhà Quận Thủ Đức",
+               "content": "Cho thuê nhà Quận Thủ Đức"
+            },
+            "address": {
+               "class": "post-address",
+               "content": "Địa chỉ: 108 Ngô Chí Quốc, Phường Bình Chiểu, Quận Thủ Đức, Hồ Chí Minh"
+            },
+            "attributes": {
+               "price": "13 triệu/tháng",
+               "acreage": "68m2",
+               "published": "Hôm nay",
+               "hashtag": "639272"
+            }
          },
          "mainContent": {
             "header_section": "Thông tin mô tả",
@@ -143,9 +165,20 @@
          "header": {
             "title": "Cho thuê nhà nguyên căn 33/39A Nguyễn Đình Chính, P15, Quận Phú nhuận",
             "stars": "2",
-            "nav": { "title": "Chuyên mục: Cho thuê nhà Quận Phú Nhuận", "content": "Cho thuê nhà Quận Phú Nhuận" },
-            "address": { "class": "post-address", "content": "Địa chỉ: 33/39A Nguyễn Đình Chính, Phường 15, Quận Phú Nhuận, Hồ Chí Minh" },
-            "attributes": { "price": "15 triệu/tháng", "acreage": "160m2", "published": "Hôm nay", "hashtag": "629410" }
+            "nav": {
+               "title": "Chuyên mục: Cho thuê nhà Quận Phú Nhuận",
+               "content": "Cho thuê nhà Quận Phú Nhuận"
+            },
+            "address": {
+               "class": "post-address",
+               "content": "Địa chỉ: 33/39A Nguyễn Đình Chính, Phường 15, Quận Phú Nhuận, Hồ Chí Minh"
+            },
+            "attributes": {
+               "price": "15 triệu/tháng",
+               "acreage": "160m2",
+               "published": "Hôm nay",
+               "hashtag": "629410"
+            }
          },
          "mainContent": {
             "header_section": "Thông tin mô tả",
@@ -197,9 +230,20 @@
          ],
          "header": {
             "title": "CHO THUÊ NHÀ NGUYÊN CĂN MT QUẬN TÂN PHÚ",
-            "nav": { "title": "Chuyên mục: Cho thuê nhà Quận Tân Phú", "content": "Cho thuê nhà Quận Tân Phú" },
-            "address": { "class": "post-address", "content": "Địa chỉ: 375A Đường Nguyễn Sơn, Phường Phú Thạnh, Quận Tân Phú, Hồ Chí Minh" },
-            "attributes": { "price": "13 triệu/tháng", "acreage": "46.8m2", "published": "1 giờ trước", "hashtag": "638563" }
+            "nav": {
+               "title": "Chuyên mục: Cho thuê nhà Quận Tân Phú",
+               "content": "Cho thuê nhà Quận Tân Phú"
+            },
+            "address": {
+               "class": "post-address",
+               "content": "Địa chỉ: 375A Đường Nguyễn Sơn, Phường Phú Thạnh, Quận Tân Phú, Hồ Chí Minh"
+            },
+            "attributes": {
+               "price": "13 triệu/tháng",
+               "acreage": "46.8m2",
+               "published": "1 giờ trước",
+               "hashtag": "638563"
+            }
          },
          "mainContent": {
             "header_section": "Thông tin mô tả",
@@ -263,8 +307,16 @@
          "header": {
             "title": "Cho thuê nhà hẻm 68 Trần Quang Khải Q1, trệt 2 lầu, cách mặt tiền 50m giá 7tr",
             "nav": { "title": "Chuyên mục: Cho thuê nhà Quận 1", "content": "Cho thuê nhà Quận 1" },
-            "address": { "class": "post-address", "content": "Địa chỉ: 68 Đường Trần Quang Khải, Phường Tân Định, Quận 1, Hồ Chí Minh" },
-            "attributes": { "price": "7 triệu/tháng", "acreage": "48m2", "published": "1 ngày trước", "hashtag": "286621" }
+            "address": {
+               "class": "post-address",
+               "content": "Địa chỉ: 68 Đường Trần Quang Khải, Phường Tân Định, Quận 1, Hồ Chí Minh"
+            },
+            "attributes": {
+               "price": "7 triệu/tháng",
+               "acreage": "48m2",
+               "published": "1 ngày trước",
+               "hashtag": "286621"
+            }
          },
          "mainContent": {
             "header_section": "Thông tin mô tả",
@@ -309,9 +361,20 @@
          ],
          "header": {
             "title": "cho thuê nhà mặt tiền, có hai căn liền kề",
-            "nav": { "title": "Chuyên mục: Cho thuê nhà Huyện Phú Tân", "content": "Cho thuê nhà Huyện Phú Tân" },
-            "address": { "class": "post-address", "content": "Địa chỉ: 164 Đường Bùi Thị Trường, Phường 5, Huyện Phú Tân, Cà Mau" },
-            "attributes": { "price": "12 triệu/tháng", "acreage": "150m2", "published": "1 ngày trước", "hashtag": "639529" }
+            "nav": {
+               "title": "Chuyên mục: Cho thuê nhà Huyện Phú Tân",
+               "content": "Cho thuê nhà Huyện Phú Tân"
+            },
+            "address": {
+               "class": "post-address",
+               "content": "Địa chỉ: 164 Đường Bùi Thị Trường, Phường 5, Huyện Phú Tân, Cà Mau"
+            },
+            "attributes": {
+               "price": "12 triệu/tháng",
+               "acreage": "150m2",
+               "published": "1 ngày trước",
+               "hashtag": "639529"
+            }
          },
          "mainContent": {
             "header_section": "Thông tin mô tả",
@@ -350,9 +413,20 @@
          "images": [],
          "header": {
             "title": "Nhà Nguyên Căn 60m2 Quận 10 chỉ 5 triệu/tháng",
-            "nav": { "title": "Chuyên mục: Cho thuê nhà Quận 10", "content": "Cho thuê nhà Quận 10" },
-            "address": { "class": "post-address", "content": "Địa chỉ: Đường Thành Thái, Phường 12, Quận 10, Hồ Chí Minh" },
-            "attributes": { "price": "5 triệu/tháng", "acreage": "60m2", "published": "1 ngày trước", "hashtag": "639527" }
+            "nav": {
+               "title": "Chuyên mục: Cho thuê nhà Quận 10",
+               "content": "Cho thuê nhà Quận 10"
+            },
+            "address": {
+               "class": "post-address",
+               "content": "Địa chỉ: Đường Thành Thái, Phường 12, Quận 10, Hồ Chí Minh"
+            },
+            "attributes": {
+               "price": "5 triệu/tháng",
+               "acreage": "60m2",
+               "published": "1 ngày trước",
+               "hashtag": "639527"
+            }
          },
          "mainContent": {
             "header_section": "Thông tin mô tả",
@@ -400,8 +474,16 @@
          "header": {
             "title": "Cho thuê Nhà phố Ventura Phường Cát Lái Quận 2, giá 15tr Dt 7x17m 1 Trệt 3 Lầu 1 sân thượng",
             "nav": { "title": "Chuyên mục: Cho thuê nhà Quận 2", "content": "Cho thuê nhà Quận 2" },
-            "address": { "class": "post-address", "content": "Địa chỉ: Phường Cát Lái, Quận 2, Hồ Chí Minh" },
-            "attributes": { "price": "15 triệu/tháng", "acreage": "119m2", "published": "1 ngày trước", "hashtag": "636928" }
+            "address": {
+               "class": "post-address",
+               "content": "Địa chỉ: Phường Cát Lái, Quận 2, Hồ Chí Minh"
+            },
+            "attributes": {
+               "price": "15 triệu/tháng",
+               "acreage": "119m2",
+               "published": "1 ngày trước",
+               "hashtag": "636928"
+            }
          },
          "mainContent": {
             "header_section": "Thông tin mô tả",
@@ -456,9 +538,20 @@
          "images": [],
          "header": {
             "title": "Cho thuê nhà đẹp sạch vuông vức ngõ 639 hoàng hoa thám",
-            "nav": { "title": "Chuyên mục: Cho thuê nhà Quận Ba Đình", "content": "Cho thuê nhà Quận Ba Đình" },
-            "address": { "class": "post-address", "content": "Địa chỉ: Ngõ 639 Hoàng Hoa Thám, Phường Vĩnh Phúc, Quận Ba Đình, Hà Nội" },
-            "attributes": { "price": "12 triệu/tháng", "acreage": "40m2", "published": "1 ngày trước", "hashtag": "639519" }
+            "nav": {
+               "title": "Chuyên mục: Cho thuê nhà Quận Ba Đình",
+               "content": "Cho thuê nhà Quận Ba Đình"
+            },
+            "address": {
+               "class": "post-address",
+               "content": "Địa chỉ: Ngõ 639 Hoàng Hoa Thám, Phường Vĩnh Phúc, Quận Ba Đình, Hà Nội"
+            },
+            "attributes": {
+               "price": "12 triệu/tháng",
+               "acreage": "40m2",
+               "published": "1 ngày trước",
+               "hashtag": "639519"
+            }
          },
          "mainContent": {
             "header_section": "Thông tin mô tả",
@@ -504,8 +597,16 @@
          "header": {
             "title": "Cho thuê nguyên căn Gần cầu chữ Y giáp quận 1 - quận 5 Full nội thất 3pn 3wc",
             "nav": { "title": "Chuyên mục: Cho thuê nhà Quận 8", "content": "Cho thuê nhà Quận 8" },
-            "address": { "class": "post-address", "content": "Địa chỉ: Ba Đình, Phường 8, Quận 8, Hồ Chí Minh" },
-            "attributes": { "price": "10.5 triệu/tháng", "acreage": "84m2", "published": "1 ngày trước", "hashtag": "639511" }
+            "address": {
+               "class": "post-address",
+               "content": "Địa chỉ: Ba Đình, Phường 8, Quận 8, Hồ Chí Minh"
+            },
+            "attributes": {
+               "price": "10.5 triệu/tháng",
+               "acreage": "84m2",
+               "published": "1 ngày trước",
+               "hashtag": "639511"
+            }
          },
          "mainContent": {
             "header_section": "Thông tin mô tả",
@@ -554,9 +655,20 @@
          ],
          "header": {
             "title": "Cho thuê nhà giá rẻ 201/5/4A Đường Mã Lò, Phường Bình Trị Đông A, Quận Bình Tân",
-            "nav": { "title": "Chuyên mục: Cho thuê nhà Quận Bình Tân", "content": "Cho thuê nhà Quận Bình Tân" },
-            "address": { "class": "post-address", "content": "Địa chỉ: 201/5 Đường Mã Lò, Phường Bình Trị Đông A, Quận Bình Tân, Hồ Chí Minh" },
-            "attributes": { "price": "6.5 triệu/tháng", "acreage": "80m2", "published": "2 ngày trước", "hashtag": "591897" }
+            "nav": {
+               "title": "Chuyên mục: Cho thuê nhà Quận Bình Tân",
+               "content": "Cho thuê nhà Quận Bình Tân"
+            },
+            "address": {
+               "class": "post-address",
+               "content": "Địa chỉ: 201/5 Đường Mã Lò, Phường Bình Trị Đông A, Quận Bình Tân, Hồ Chí Minh"
+            },
+            "attributes": {
+               "price": "6.5 triệu/tháng",
+               "acreage": "80m2",
+               "published": "2 ngày trước",
+               "hashtag": "591897"
+            }
          },
          "mainContent": {
             "header_section": "Thông tin mô tả",
@@ -595,18 +707,28 @@
       },
       {
          "images": [
-            "https://pt123.cdn.static123.com/images/thumbs/900x600/fit/%7BVar:ImgPath5%7D",
             "https://pt123.cdn.static123.com/images/thumbs/900x600/fit/2023/09/28/z4731375345098-2db74b50f87116500acab1fd87d18d1c_1695859865.jpg",
             "https://pt123.cdn.static123.com/images/thumbs/900x600/fit/2023/09/28/z4731375348193-0cc23da4516a0d85807b3cb9b36e4859_1695859865.jpg",
             "https://pt123.cdn.static123.com/images/thumbs/900x600/fit/2023/09/28/z4731375351111-42735c5ccc5ce053a178608069de1e47_1695859866.jpg",
-            "https://pt123.cdn.static123.com/images/thumbs/900x600/fit/%7BVar:ImgPath5%7D",
+
             "https://pt123.cdn.static123.com/images/thumbs/900x600/fit/2023/09/28/z4731375345098-2db74b50f87116500acab1fd87d18d1c_1695859865.jpg"
          ],
          "header": {
             "title": "Cho thuê nhà hẻm 8m VTKD thông Lũy Bán Bích quận Tân phú dtsd 48m2 -6 trieu",
-            "nav": { "title": "Chuyên mục: Cho thuê nhà Quận Tân Phú", "content": "Cho thuê nhà Quận Tân Phú" },
-            "address": { "class": "post-address", "content": "Địa chỉ: Đường Lũy Bán Bích, Tân Thới Hòa" },
-            "attributes": { "price": "6 triệu/tháng", "acreage": "24m2", "published": "2 ngày trước", "hashtag": "636489" }
+            "nav": {
+               "title": "Chuyên mục: Cho thuê nhà Quận Tân Phú",
+               "content": "Cho thuê nhà Quận Tân Phú"
+            },
+            "address": {
+               "class": "post-address",
+               "content": "Địa chỉ: Đường Lũy Bán Bích, Tân Thới Hòa"
+            },
+            "attributes": {
+               "price": "6 triệu/tháng",
+               "acreage": "24m2",
+               "published": "2 ngày trước",
+               "hashtag": "636489"
+            }
          },
          "mainContent": {
             "header_section": "Thông tin mô tả",
@@ -648,9 +770,20 @@
          ],
          "header": {
             "title": "Cho thuê Mặt tiền Kinh Doanh 12m thông Thach Lam 72m2 -2T BTCT -12 triệu TL",
-            "nav": { "title": "Chuyên mục: Cho thuê nhà Quận Tân Phú", "content": "Cho thuê nhà Quận Tân Phú" },
-            "address": { "class": "post-address", "content": "Địa chỉ: Đường Thạch Lam, Phú Thạnh" },
-            "attributes": { "price": "12 triệu/tháng", "acreage": "72m2", "published": "2 ngày trước", "hashtag": "638822" }
+            "nav": {
+               "title": "Chuyên mục: Cho thuê nhà Quận Tân Phú",
+               "content": "Cho thuê nhà Quận Tân Phú"
+            },
+            "address": {
+               "class": "post-address",
+               "content": "Địa chỉ: Đường Thạch Lam, Phú Thạnh"
+            },
+            "attributes": {
+               "price": "12 triệu/tháng",
+               "acreage": "72m2",
+               "published": "2 ngày trước",
+               "hashtag": "638822"
+            }
          },
          "mainContent": {
             "header_section": "Thông tin mô tả",
@@ -682,19 +815,28 @@
       },
       {
          "images": [
-            "https://pt123.cdn.static123.com/images/thumbs/900x600/fit/%7BVar:ImgPath5%7D",
             "https://pt123.cdn.static123.com/images/thumbs/900x600/fit/2023/10/27/z4819034001668-4af580bc06ff53bd750c10567fd4fe15_1698362809.jpg",
             "https://pt123.cdn.static123.com/images/thumbs/900x600/fit/2023/10/27/z4819034002936-afdc959506745cff175226b2f6a49a5b_1698362810.jpg",
             "https://pt123.cdn.static123.com/images/thumbs/900x600/fit/2023/10/27/z4819034021935-6a13bcfad2208fb5b04f91d836fd0b1a_1698362810.jpg",
             "https://pt123.cdn.static123.com/images/thumbs/900x600/fit/2023/10/27/z4819033978750-87254bfeb72181b3ed841805e557acdc_1698362811.jpg",
-            "https://pt123.cdn.static123.com/images/thumbs/900x600/fit/%7BVar:ImgPath5%7D",
             "https://pt123.cdn.static123.com/images/thumbs/900x600/fit/2023/10/27/z4819034001668-4af580bc06ff53bd750c10567fd4fe15_1698362809.jpg"
          ],
          "header": {
             "title": "Cho thuê MTKD 12M Ngay Nguyễn Sơn quận Tân Phú 4 x 18- 3T BTCT -15 triệu",
-            "nav": { "title": "Chuyên mục: Cho thuê nhà Quận Tân Phú", "content": "Cho thuê nhà Quận Tân Phú" },
-            "address": { "class": "post-address", "content": "Địa chỉ: Đường Nguyễn Sơn, Phú Thạnh" },
-            "attributes": { "price": "15 triệu/tháng", "acreage": "72m2", "published": "2 ngày trước", "hashtag": "638842" }
+            "nav": {
+               "title": "Chuyên mục: Cho thuê nhà Quận Tân Phú",
+               "content": "Cho thuê nhà Quận Tân Phú"
+            },
+            "address": {
+               "class": "post-address",
+               "content": "Địa chỉ: Đường Nguyễn Sơn, Phú Thạnh"
+            },
+            "attributes": {
+               "price": "15 triệu/tháng",
+               "acreage": "72m2",
+               "published": "2 ngày trước",
+               "hashtag": "638842"
+            }
          },
          "mainContent": {
             "header_section": "Thông tin mô tả",
@@ -733,9 +875,20 @@
          ],
          "header": {
             "title": "Nhà mới xây thông Lũy Bán Bích, Tân Phú dt 90m2,HXH chỉ 9 trieu",
-            "nav": { "title": "Chuyên mục: Cho thuê nhà Quận Tân Phú", "content": "Cho thuê nhà Quận Tân Phú" },
-            "address": { "class": "post-address", "content": "Địa chỉ: Phường Tân Thới Hòa, Quận Tân Phú, Hồ Chí Minh" },
-            "attributes": { "price": "9 triệu/tháng", "acreage": "90m2", "published": "2 ngày trước", "hashtag": "601150" }
+            "nav": {
+               "title": "Chuyên mục: Cho thuê nhà Quận Tân Phú",
+               "content": "Cho thuê nhà Quận Tân Phú"
+            },
+            "address": {
+               "class": "post-address",
+               "content": "Địa chỉ: Phường Tân Thới Hòa, Quận Tân Phú, Hồ Chí Minh"
+            },
+            "attributes": {
+               "price": "9 triệu/tháng",
+               "acreage": "90m2",
+               "published": "2 ngày trước",
+               "hashtag": "601150"
+            }
          },
          "mainContent": {
             "header_section": "Thông tin mô tả",
@@ -781,9 +934,20 @@
          ],
          "header": {
             "title": "Cho thuê MTKD 12M thông Lũy Bán Bích quận Tân Phú 4 x 22M -2T -16 triệu TL",
-            "nav": { "title": "Chuyên mục: Cho thuê nhà Quận Tân Phú", "content": "Cho thuê nhà Quận Tân Phú" },
-            "address": { "class": "post-address", "content": "Địa chỉ: Đường Lũy Bán Bích, Tân Thành" },
-            "attributes": { "price": "16 triệu/tháng", "acreage": "88m2", "published": "2 ngày trước", "hashtag": "639076" }
+            "nav": {
+               "title": "Chuyên mục: Cho thuê nhà Quận Tân Phú",
+               "content": "Cho thuê nhà Quận Tân Phú"
+            },
+            "address": {
+               "class": "post-address",
+               "content": "Địa chỉ: Đường Lũy Bán Bích, Tân Thành"
+            },
+            "attributes": {
+               "price": "16 triệu/tháng",
+               "acreage": "88m2",
+               "published": "2 ngày trước",
+               "hashtag": "639076"
+            }
          },
          "mainContent": {
             "header_section": "Thông tin mô tả",
@@ -822,8 +986,16 @@
          "header": {
             "title": "Cho thuê nhà nguyên căn Nguyễn Du, Q.1",
             "nav": { "title": "Chuyên mục: Cho thuê nhà Quận 1", "content": "Cho thuê nhà Quận 1" },
-            "address": { "class": "post-address", "content": "Địa chỉ: Đường Nguyễn Du, Phường Bến Thành, Quận 1, Hồ Chí Minh" },
-            "attributes": { "price": "7.5 triệu/tháng", "acreage": "44m2", "published": "2 ngày trước", "hashtag": "300268" }
+            "address": {
+               "class": "post-address",
+               "content": "Địa chỉ: Đường Nguyễn Du, Phường Bến Thành, Quận 1, Hồ Chí Minh"
+            },
+            "attributes": {
+               "price": "7.5 triệu/tháng",
+               "acreage": "44m2",
+               "published": "2 ngày trước",
+               "hashtag": "300268"
+            }
          },
          "mainContent": {
             "header_section": "Thông tin mô tả",
@@ -872,8 +1044,16 @@
          "header": {
             "title": "Cho thuê nhà nguyên căn đẹp giá rẻ để ở, kinh doanh, mở văn phòng - 100m2",
             "nav": { "title": "Chuyên mục: Cho thuê nhà Quận 9", "content": "Cho thuê nhà Quận 9" },
-            "address": { "class": "post-address", "content": "Địa chỉ: 64/10 Đường Hoàng Hữu Nam, Phường Long Thạnh Mỹ, Quận 9, Hồ Chí Minh" },
-            "attributes": { "price": "8 triệu/tháng", "acreage": "100m2", "published": "3 ngày trước", "hashtag": "637543" }
+            "address": {
+               "class": "post-address",
+               "content": "Địa chỉ: 64/10 Đường Hoàng Hữu Nam, Phường Long Thạnh Mỹ, Quận 9, Hồ Chí Minh"
+            },
+            "attributes": {
+               "price": "8 triệu/tháng",
+               "acreage": "100m2",
+               "published": "3 ngày trước",
+               "hashtag": "637543"
+            }
          },
          "mainContent": {
             "header_section": "Thông tin mô tả",
@@ -926,8 +1106,16 @@
          "header": {
             "title": "VILLA Phường An Khánh Ngang 8 Mét, 4 Phòng Giá Chỉ 28 Triệu",
             "nav": { "title": "Chuyên mục: Cho thuê nhà Quận 2", "content": "Cho thuê nhà Quận 2" },
-            "address": { "class": "post-address", "content": "Địa chỉ: Đường số 12, Phường An Khánh, Quận 2, Hồ Chí Minh" },
-            "attributes": { "price": "28 triệu/tháng", "acreage": "320m2", "published": "3 ngày trước", "hashtag": "639358" }
+            "address": {
+               "class": "post-address",
+               "content": "Địa chỉ: Đường số 12, Phường An Khánh, Quận 2, Hồ Chí Minh"
+            },
+            "attributes": {
+               "price": "28 triệu/tháng",
+               "acreage": "320m2",
+               "published": "3 ngày trước",
+               "hashtag": "639358"
+            }
          },
          "mainContent": {
             "header_section": "Thông tin mô tả",
@@ -979,9 +1167,20 @@
          ],
          "header": {
             "title": "Cho thuê nhà nguyên căn có ban công, 1 trệt, 1 lầu, 2 phòng ngủ, 1 WC, ngay Nguyễn Thái Sơn",
-            "nav": { "title": "Chuyên mục: Cho thuê nhà Quận Gò Vấp", "content": "Cho thuê nhà Quận Gò Vấp" },
-            "address": { "class": "post-address", "content": "Địa chỉ: 566 Đường Nguyễn Thái Sơn, Phường 5, Quận Gò Vấp, Hồ Chí Minh" },
-            "attributes": { "price": "8 triệu/tháng", "acreage": "60m2", "published": "3 ngày trước", "hashtag": "639356" }
+            "nav": {
+               "title": "Chuyên mục: Cho thuê nhà Quận Gò Vấp",
+               "content": "Cho thuê nhà Quận Gò Vấp"
+            },
+            "address": {
+               "class": "post-address",
+               "content": "Địa chỉ: 566 Đường Nguyễn Thái Sơn, Phường 5, Quận Gò Vấp, Hồ Chí Minh"
+            },
+            "attributes": {
+               "price": "8 triệu/tháng",
+               "acreage": "60m2",
+               "published": "3 ngày trước",
+               "hashtag": "639356"
+            }
          },
          "mainContent": {
             "header_section": "Thông tin mô tả",

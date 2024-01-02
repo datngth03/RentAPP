@@ -4,12 +4,13 @@ import InputForm from "../../components/InputForm";
 import Button from "../../components/Button";
 import { useLocation, useNavigate } from "react-router-dom";
 import * as actions from "../../store/actions";
+import Swal from "sweetalert2";
 
 const Login = () => {
    const location = useLocation();
    const dispatch = useDispatch();
    const navigate = useNavigate();
-   const { isLoggedIn, msg, update } = useSelector((state) => state.auth);
+   const { isLoggedIn, message, update } = useSelector((state) => state.auth);
    const [isRegister, setRegister] = useState(location.state?.flag);
    const [invalidField, setInvalidField] = useState([]);
    const [payload, setPayload] = useState({
@@ -26,12 +27,14 @@ const Login = () => {
    useEffect(() => {
       setRegister(location.state?.flag);
    }, [location.state?.flag]);
-   // console.log(isRegister);
-   // console.log(location);
+
    useEffect(() => {
       isLoggedIn && navigate("/");
    }, [isLoggedIn, navigate]);
 
+   useEffect(() => {
+      message && Swal.fire("Oops !", message, "error");
+   }, [message, update]);
    const handleSubmit = async () => {
       // console.log(payload);
       let finalPayload = isRegister
@@ -90,7 +93,6 @@ const Login = () => {
                break;
          }
       });
-      console.log(invalidField);
       return invalids;
    };
 
@@ -128,8 +130,8 @@ const Login = () => {
             />
             <Button
                text={isRegister ? "Đăng kí" : "Đăng nhập"}
-               bgcolor={"bg-secondary1"}
-               textcolor={"text-[white]"}
+               bgColor={"bg-secondary1"}
+               textColor={"text-[white]"}
                fullWidth
                onClick={handleSubmit}
             />

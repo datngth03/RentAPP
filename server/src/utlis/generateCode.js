@@ -1,6 +1,6 @@
 require("dotenv").config();
 
-const generateCode = (value) => {
+export const generateCode = (value) => {
    // Chuẩn hóa và loại bỏ dấu tiếng Việt
    let normalizedValue = value.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
@@ -23,10 +23,23 @@ const generateCode = (value) => {
       length = index;
    }
 
-   // Thêm một phần của chuỗi đầu vào vào mã code (ở đây là 5 ký tự đầu tiên)
-   // output += cleanedValue.substring(0, 5);
-
    return output.toUpperCase();
 };
 
-export default generateCode;
+export const generateCodePro = (value) => {
+   let output = "";
+   value = value
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .split(" ")
+      .join("");
+   let merge = value + process.env.SECRET_GENERATE;
+   let length = merge.length;
+
+   for (let i = 0; i < 3; i++) {
+      let index = i === 2 ? Math.floor(merge.length / 2 + length / 2) : Math.floor(length / 2);
+      output += merge.charAt(index);
+      length = index;
+   }
+   return `${value.charAt(2)}${output}`.toUpperCase();
+};

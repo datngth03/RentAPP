@@ -1,4 +1,4 @@
-import generateCode from "./generateCode";
+import { generateCodePro } from "./generateCode";
 const prices = [
    {
       min: 0,
@@ -77,9 +77,9 @@ const areas = [
 
 export const dataPrice = prices.map((item) => ({
    ...item,
-   code: generateCode(item.value),
+   code: generateCodePro(item.value),
 }));
 export const dataArea = areas.map((item) => ({
    ...item,
-   code: generateCode(item.value),
+   code: generateCodePro(item.value),
 }));
