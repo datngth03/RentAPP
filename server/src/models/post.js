@@ -11,6 +11,11 @@ module.exports = (sequelize, DataTypes) => {
             as: "attributes",
          });
          Post.belongsTo(models.User, { foreignKey: "userId", targetKey: "id", as: "user" });
+         Post.belongsTo(models.Feature, {
+            foreignKey: "featureId",
+            targetKey: "id",
+            as: "features",
+         });
       }
    }
    Post.init(

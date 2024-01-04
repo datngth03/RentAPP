@@ -79,9 +79,10 @@ function Header() {
                         // Icon={BsChevronDown}
                         onClick={() => setIsShowMenu((prev) => !prev)}
                         underlineOnHover={true}
+                        className="pr-4"
                      />
                      {isShowMenu && (
-                        <div className="absolute min-w-200 top-full bg-white shadow-md rounded-md p-4 right-0 flex flex-col">
+                        <div className="absolute min-w-200 top-full bg-white shadow-md rounded-md p-4 right-0 flex flex-col z-20">
                            {memuSidebar.map((item) => {
                               return (
                                  <Link

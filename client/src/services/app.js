@@ -42,19 +42,19 @@ export const apiGetPublicProvinces = () =>
       try {
          const response = await axiosDefault({
             method: "get",
-            url: "https://vapi.vnappmob.com/api/province/",
+            url: "https://provinces.open-api.vn/api/p",
          });
          resolve(response);
       } catch (error) {
          reject(error);
       }
    });
-export const apiGetPublicDistrict = (provinceId) =>
+export const apiGetPublicDistrict = (provinceCode) =>
    new Promise(async (resolve, reject) => {
       try {
          const response = await axiosDefault({
             method: "get",
-            url: `https://vapi.vnappmob.com/api/province/district/${provinceId}`,
+            url: `https://provinces.open-api.vn/api/p/${provinceCode}?depth=2`,
          });
          resolve(response);
       } catch (error) {

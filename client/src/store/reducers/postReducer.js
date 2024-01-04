@@ -4,6 +4,8 @@ const initState = {
    msg: "",
    count: 0,
    newPosts: [],
+   postsOfAdmin: [],
+   dataEdit: null,
 };
 
 const postReducer = (state = initState, action) => {
@@ -21,6 +23,23 @@ const postReducer = (state = initState, action) => {
             ...state,
             msg: action.msg || "",
             newPosts: action.newPosts || [],
+         };
+      case actionTypes.GET_POSTS_ADMIN:
+         return {
+            ...state,
+            msg: action.msg || "",
+            postsOfAdmin: action.posts || [],
+            count: action.count || 0,
+         };
+      case actionTypes.EDIT_DATA:
+         return {
+            ...state,
+            dataEdit: action.dataEdit || null,
+         };
+      case actionTypes.RESET_DATAEDIT:
+         return {
+            ...state,
+            dataEdit: null,
          };
       default:
          return state;

@@ -8,7 +8,7 @@ import { useDispatch, useSelector } from "react-redux";
 const Home = () => {
    const { isLoggedIn } = useSelector((state) => state.auth);
    return (
-      <div className="w-full flex flex-col items-center h-full">
+      <div className="w-full flex flex-col items-center h-full gap-6">
          <Header />
          <Navigation />
          {isLoggedIn && <Search />}
@@ -17,6 +17,7 @@ const Home = () => {
          </div>
          <Intro />
          <Contact />
+         <div className="h-[500px]"></div>
       </div>
    );
 };

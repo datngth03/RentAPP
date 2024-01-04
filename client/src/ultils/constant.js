@@ -11,6 +11,7 @@ export const path = {
    SEARCH: "tim-kiem",
    SYSTEM: "/he-thong/*",
    CREATE_POST: "tao-moi-bai-dang",
+   MANAGE_POST: "quan-ly-bai-dang",
 };
 
 export const text = {

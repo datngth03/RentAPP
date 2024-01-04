@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 
 const User = () => {
    const { currentData } = useSelector((state) => state.user);
-   console.log(currentData);
 
    const navigate = useNavigate();
 

@@ -67,6 +67,7 @@ const Search = () => {
       } ${queryTextObj.price ? `giá ${queryTextObj.price}` : ""} ${
          queryTextObj.area ? `diện tích ${queryTextObj.area}` : ""
       } `;
+
       navigate(
          {
             pathname: path.SEARCH,

@@ -38,7 +38,8 @@ const Sidebar = () => {
             {menuSidebar.map((item) => {
                return (
                   <NavLink
-                     className={`px-2 ${item.isActive ? activeStyle : notActiceStyle}`}
+                     style={{ padding: "0.5rem" }}
+                     className={({ isActive }) => (isActive ? activeStyle : notActiceStyle)}
                      key={item.id}
                      to={item?.path}
                   >
@@ -47,7 +48,11 @@ const Sidebar = () => {
                   </NavLink>
                );
             })}
-            <span onClick={() => dispatch(actions.logout())} className={`px-2 ${notActiceStyle}`}>
+            <span
+               onClick={() => dispatch(actions.logout())}
+               className={notActiceStyle}
+               style={{ padding: "0.5rem" }}
+            >
                <AiOutlineLogout />
                Thoát
             </span>

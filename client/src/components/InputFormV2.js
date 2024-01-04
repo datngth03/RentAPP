@@ -1,6 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 
-const InputFormV2 = ({ label, unit, value, setValue, name, small }) => {
+const InputFormV2 = ({
+   label,
+   unit,
+   value,
+   setValue,
+   name,
+   small,
+   inValidFields,
+   setInValidFields,
+}) => {
+   const [isInputFocused, setIsInputFocused] = useState(false);
+
+   const handleFocus = () => {
+      setIsInputFocused(true);
+      setInValidFields([]);
+   };
+
+   const handleBlur = () => {
+      setIsInputFocused(false);
+      setValue((prev) => ({
+         ...prev,
+         [name]: prev[name] === "" && unit !== undefined ? 0 : prev[name],
+      }));
+   };
+
+   const handleChange = (e) => {
+      const inputValue = e.target.value;
+      setValue((prev) => ({ ...prev, [name]: inputValue }));
+   };
    return (
       <div>
          <label htmlFor="title">{label}</label>
@@ -11,8 +39,10 @@ const InputFormV2 = ({ label, unit, value, setValue, name, small }) => {
                className={`${
                   unit ? "rounded-tl-md rounded-bl-md" : "rounded-md"
                } outline-none border flex-auto border-gray-300 p-2`}
-               value={value}
-               onChange={(e) => setValue((prev) => ({ ...prev, [name]: e.target.value }))}
+               value={isInputFocused ? (value === 0 ? "" : value) : value}
+               onFocus={handleFocus}
+               onBlur={handleBlur}
+               onChange={handleChange}
             />
             {unit && (
                <span className="p-2 border flex-none w-16 flex items-center justify-center rounded-tr-md rounded-br-md bg-gray-200">
@@ -20,7 +50,11 @@ const InputFormV2 = ({ label, unit, value, setValue, name, small }) => {
                </span>
             )}
          </div>
-         {small && <small className="opacity-70">{small}</small>}
+         {small && <small className="opacity-70 whitespace-nowrap">{small}</small>}
+         <small className="text-red-500 block w-full">
+            {inValidFields?.some((item) => item.name === name) &&
+               inValidFields?.find((item) => item.name === name)?.message}
+         </small>
       </div>
    );
 };

@@ -3,7 +3,7 @@ const { Model } = require("sequelize");
 module.exports = (sequelize, DataTypes) => {
    class Feature extends Model {
       static associate(models) {
-         // define association here
+         Feature.hasOne(models.Post, { foreignKey: "featureId", as: "features" });
       }
    }
    Feature.init(
@@ -13,8 +13,8 @@ module.exports = (sequelize, DataTypes) => {
          type: DataTypes.STRING,
          target: DataTypes.STRING,
          bonus: DataTypes.STRING,
-         created: DataTypes.DATE,
-         expired: DataTypes.DATE,
+         created: DataTypes.STRING,
+         expired: DataTypes.STRING,
       },
       {
          sequelize,

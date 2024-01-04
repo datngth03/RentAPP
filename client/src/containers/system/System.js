@@ -6,14 +6,14 @@ import { Header, Sidebar } from "./";
 
 const System = () => {
    const { isLoggedIn } = useSelector((state) => state.auth);
-
    if (!isLoggedIn) return <Navigate to={`/${path.LOGIN}`} replace={true} />;
+
    return (
-      <div className="w-full h-screen flex flex-col items-center">
+      <div className="w-full h-screen flex flex-col items-center overflow-y-hidden">
          <Header />
-         <div className="flex w-full flex-auto">
+         <div className="flex w-full flex-auto h-screen">
             <Sidebar />
-            <div className="flex-auto bg-white shadow-md h-full p-4">
+            <div className="flex-auto bg-white shadow-md overflow-y-scroll">
                <Outlet />
             </div>
          </div>
