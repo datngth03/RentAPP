@@ -56,7 +56,6 @@ const ManagePost = () => {
    };
 
    useEffect(() => {
-      console.log(status);
       if (status === 1) {
          const activePost = postsOfAdmin?.filter((item) =>
             checkStatus(item?.features?.expired.split(" ")[3])

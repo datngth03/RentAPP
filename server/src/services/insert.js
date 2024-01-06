@@ -124,6 +124,8 @@ export const insertService = () =>
                   password: hashPassword("123456"),
                   phone: item?.contact?.content_section.find((i) => i.key === "Điện thoại:")?.value,
                   zalo: item?.contact?.content_section.find((i) => i.key === "Zalo")?.value,
+                  fbUrl: null,
+                  avatar: null,
                   ignoreDuplicates: true,
                });
             });

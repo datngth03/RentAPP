@@ -3,9 +3,13 @@ import { useSelector } from "react-redux";
 import anonAvatar from "../assets/anon-avatar.png";
 import { useNavigate } from "react-router-dom";
 
+import { blobToBase64 } from "../../src/ultils/fileToBase64.js";
+
 const User = () => {
    const { currentData } = useSelector((state) => state.user);
-
+   const avatarSrc = currentData?.avatar
+      ? blobToBase64(currentData.avatar) || anonAvatar
+      : anonAvatar;
    const navigate = useNavigate();
 
    const handleNavigate = () => {
@@ -15,7 +19,7 @@ const User = () => {
    return (
       <div className="flex items-center gap-2">
          <img
-            src={currentData?.avatar || anonAvatar}
+            src={avatarSrc}
             alt="avatar"
             className="w-10 object-cover rounded-full h-10 border-2 shadow-md border-white cursor-pointer"
             onClick={handleNavigate}

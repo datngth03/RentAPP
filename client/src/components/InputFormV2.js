@@ -9,6 +9,7 @@ const InputFormV2 = ({
    small,
    inValidFields,
    setInValidFields,
+   direction,
 }) => {
    const [isInputFocused, setIsInputFocused] = useState(false);
 
@@ -30,9 +31,11 @@ const InputFormV2 = ({
       setValue((prev) => ({ ...prev, [name]: inputValue }));
    };
    return (
-      <div>
-         <label htmlFor="title">{label}</label>
-         <div className="flex items-center">
+      <div className={`flex ${direction ? direction : "flex-col"}`}>
+         <label className="w-48 flex-none" htmlFor="title">
+            {label}
+         </label>
+         <div className="flex flex-auto items-center">
             <input
                type="text"
                id=" title"
@@ -51,10 +54,12 @@ const InputFormV2 = ({
             )}
          </div>
          {small && <small className="opacity-70 whitespace-nowrap">{small}</small>}
-         <small className="text-red-500 block w-full">
-            {inValidFields?.some((item) => item.name === name) &&
-               inValidFields?.find((item) => item.name === name)?.message}
-         </small>
+
+         {inValidFields?.some((item) => item.name === name) && (
+            <small className="text-red-500 block w-full">
+               {inValidFields?.find((item) => item.name === name)?.message}
+            </small>
+         )}
       </div>
    );
 };

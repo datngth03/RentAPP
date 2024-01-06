@@ -104,9 +104,9 @@ const CreatePost = ({ isEdit }) => {
       if (result === 0) {
          if (dataEdit && isEdit) {
             finalPayload.postId = dataEdit.id;
-            console.log(finalPayload);
+
             const response = await apiUpdatePosts(finalPayload);
-            console.log(response);
+
             if (response.data?.err === 0) {
                Swal.fire({
                   icon: "success",

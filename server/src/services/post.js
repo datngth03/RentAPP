@@ -211,7 +211,6 @@ export const getPostsLimitAdminService = (id, page, query) =>
 export const updatePostService = ({ postId, attributesId, imagesId, featureId, ...body }) =>
    new Promise(async (resolve, reject) => {
       try {
-         console.log(body.label);
          const labelCode = generateCode(body.label);
          const cleanedProvince = body.province.replace(/^(Tỉnh|Thành phố)\s*/i, "").trim();
          const provinceCode = generateCode(cleanedProvince);
