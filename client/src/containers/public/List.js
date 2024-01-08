@@ -9,6 +9,11 @@ const List = ({ categoryCode }) => {
    const [searchParams] = useSearchParams();
    const { posts } = useSelector((state) => state.post);
    const [updateTime, setUpdateTime] = useState(null);
+   const [active, setActive] = useState(true);
+
+   const handleActive = () => {
+      setActive((prev) => !prev);
+   };
 
    const currentDate = new Date();
    useEffect(() => {
@@ -28,8 +33,9 @@ const List = ({ categoryCode }) => {
          }
       });
       if (categoryCode) searchParamsObject.categoryCode = categoryCode;
+      if (active === false) searchParamsObject.order = ["createdAt", "DESC"];
       dispatch(getPostsLimit(searchParamsObject));
-   }, [searchParams, categoryCode]);
+   }, [searchParams, categoryCode, active]);
    return (
       <div className="w-full p-2 bg-white shadow-md rounded-md px-6">
          <div className="flex items-center justify-between my-3">
@@ -40,8 +46,18 @@ const List = ({ categoryCode }) => {
          </div>
          <div className="flex items-center gap-2 my-2">
             <span>Sắp xếp:</span>
-            <Button bgColor="bg-gray-200" text="Mặc định" hoverBgColor="bg-blue-200" />
-            <Button bgColor="bg-gray-200" text="Mới nhất" hoverBgColor="bg-blue-200" />
+            <Button
+               bgColor={active === true ? "bg-blue-200" : "bg-gray-200"}
+               text="Mặc định"
+               className="hover:bg-blue-200"
+               onClick={handleActive}
+            />
+            <Button
+               bgColor={active === false ? "bg-blue-200" : "bg-gray-200"}
+               text="Mới nhất"
+               className="hover:bg-blue-200"
+               onClick={handleActive}
+            />
          </div>
          <div className="items">
             {posts?.length > 0 &&

@@ -4,6 +4,7 @@ module.exports = (sequelize, DataTypes) => {
    class Label extends Model {
       static associate(models) {
          // define association here
+         Label.hasMany(models.Post, { foreignKey: "labelCode", as: "labels" });
       }
    }
    Label.init(

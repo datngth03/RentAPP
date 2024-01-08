@@ -71,6 +71,32 @@ export const getNewPosts = () => async (dispatch) => {
       });
    }
 };
+export const getHotPosts = () => async (dispatch) => {
+   try {
+      const response = await apiGetPostsLimit({
+         limitPost: 5,
+         order: ["star", "DESC"],
+      });
+      if (response?.data.err === 0) {
+         dispatch({
+            type: actionTypes.GET_HOT_POST,
+            hotPosts: response.data.response?.rows,
+            count: response.data.response?.count,
+         });
+      } else {
+         dispatch({
+            type: actionTypes.GET_HOT_POST,
+            msg: response.data.msg,
+            hotPosts: null,
+         });
+      }
+   } catch (error) {
+      dispatch({
+         type: actionTypes.GET_NEW_POST,
+         hotPosts: null,
+      });
+   }
+};
 export const getPostsLimitAdmin = (query) => async (dispatch) => {
    try {
       const response = await apiGetPostsLimitAdmin(query);
@@ -84,7 +110,7 @@ export const getPostsLimitAdmin = (query) => async (dispatch) => {
          dispatch({
             type: actionTypes.GET_POSTS_ADMIN,
             msg: response.data.msg,
-            post: null,
+            posts: null,
          });
       }
    } catch (error) {

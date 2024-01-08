@@ -2,6 +2,7 @@ import React, { memo, useState } from "react";
 import icons from "../ultils/icons";
 import { useNavigate, Link } from "react-router-dom";
 import { formatVietnameseToString } from "../ultils/Common/formatVietnameseToString";
+import { path } from "../ultils/constant";
 
 const indexs = [0, 1, 2, 3];
 
@@ -18,7 +19,7 @@ const Item = ({ images, user, title, star, description, attributes, address, id 
       return stars;
    };
    const handleNavigate = () => {
-      navigate(`/chi-tiet/${formatVietnameseToString(title)}/${id}`);
+      navigate(`${path.DETAIL}${formatVietnameseToString(title?.replaceAll("/", ""))}/${id}`);
    };
    return (
       <div className="w-full flex border-t border-orange-600 py-4">
@@ -29,7 +30,7 @@ const Item = ({ images, user, title, star, description, attributes, address, id 
          >
             {images.length > 0 &&
                images
-                  .filter((i, index) => indexs.some((i) => i === index))
+                  .filter((i, index) => [...Array(4).keys()].some((i) => i === index))
                   ?.map((i, index) => {
                      return (
                         <img
@@ -58,7 +59,12 @@ const Item = ({ images, user, title, star, description, attributes, address, id 
                            return <span key={number}>{star}</span>;
                         })}
                   </div>
-                  <div className="text-[#f73859] font-medium">{title}</div>
+                  <div
+                     onClick={handleNavigate}
+                     className="text-[#f73859] font-medium cursor-pointer"
+                  >
+                     {title}
+                  </div>
                </div>
                <div className="w-[10%] flex justify-end">
                   <BsBookmarkStarFill size={24} color="orange" />
@@ -70,7 +76,7 @@ const Item = ({ images, user, title, star, description, attributes, address, id 
                </span>
                <span className="flex-1">{attributes?.acreage}</span>
                <span className="flex-3 whitespace-nowrap overflow-hidden text-ellipsis">
-                  {`${address.split(",")[address.split(",").length - 2]}${
+                  {`${address.split(",")[address.split(",").length - 2]} ${
                      address.split(",")[address.split(",").length - 1]
                   }`}
                </span>
@@ -88,16 +94,19 @@ const Item = ({ images, user, title, star, description, attributes, address, id 
                   <p className="pl-[5px] text-[14px]">{user?.name}</p>
                </div>
                <div className="flex items-center gap-1">
-                  <button
+                  <a
+                     href={`tel:${user?.phone}`}
                      type="button"
                      className="text-blue-700 px-1 rounded-md border border-blue-700 hover:bg-blue-700 hover:text-white transition duration-300"
-                  >{`Gọi ${user?.phone}`}</button>
-                  <button
+                  >{`Gọi ${user?.phone}`}</a>
+                  <a
+                     href={`https://zalo.me/${user?.zalo}`}
                      type="button"
                      className="text-blue-700 px-1 rounded-md border border-blue-700 hover:bg-blue-700 hover:text-white transition duration-300"
+                     target="blank"
                   >
                      Nhắn zalo
-                  </button>
+                  </a>
                </div>
             </div>
          </div>

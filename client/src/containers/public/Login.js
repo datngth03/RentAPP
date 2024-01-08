@@ -34,6 +34,11 @@ const Login = () => {
 
    useEffect(() => {
       message && Swal.fire("Oops !", message, "error");
+      setPayload((prev) => ({
+         ...prev,
+         phone: "",
+         password: "",
+      }));
    }, [message, update]);
    const handleSubmit = async () => {
       // console.log(payload);

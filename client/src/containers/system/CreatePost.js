@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Overview, Address, Loading, Button } from "../../components";
+import { Overview, Address, Loading, Button, Map } from "../../components";
 import { apiUploadImages } from "../../services";
 import icons from "../../ultils/icons";
 import { getCodes, getCodesArea } from "../../ultils/Common/getCodes";
@@ -148,7 +148,7 @@ const CreatePost = ({ isEdit }) => {
       <div className="px-6">
          <h1 className="text-3xl font-medium py-4 border-b border-gray-200">Đăng tin mới</h1>
          <div className="flex gap-4">
-            <div className="py-4 flex flex-col gap-8 flex-auto">
+            <div className="py-4 w-[70%] flex flex-col gap-8 flex-auto">
                <Address
                   inValidFields={inValidFields}
                   setInValidFields={setInValidFields}
@@ -214,11 +214,27 @@ const CreatePost = ({ isEdit }) => {
                   bgColor="bg-green-600"
                   textColor="text-white"
                />
-               <div className="h-[200px]"></div>
             </div>
-            <div className="w-[30%] flex-none">
-               maps
-               <Loading />
+            <div className="w-[30%] flex flex-col relative">
+               <Map address={payload.address} />
+               <div className="bg-[#fff3cd] mt-8 p-4 rounded-md shadow-md text-[#856404]">
+                  <h4 className="text-2xl font-medium">Lưu ý khi đăng tin</h4>
+                  <ul className="list-disc p-4 text-justify">
+                     <li>Nội dung phải viết bằng tiếng Việt có dấu</li>
+                     <li>Tiêu đề tin không dài quá 100 kí tự</li>
+                     <li>
+                        Các bạn nên điền đầy đủ thông tin vào các mục để tin đăng có hiệu quả hơn.
+                     </li>
+                     <li>
+                        Để tăng độ tin cậy và tin rao được nhiều người quan tâm hơn, hãy sửa vị trí
+                        tin rao của bạn trên bản đồ bằng cách kéo icon tới đúng vị trí của tin rao.
+                     </li>
+                     <li>
+                        Tin đăng có hình ảnh rõ ràng sẽ được xem và gọi gấp nhiều lần so với tin rao
+                        không có ảnh. Hãy đăng ảnh để được giao dịch nhanh chóng!
+                     </li>
+                  </ul>
+               </div>
             </div>
          </div>
       </div>

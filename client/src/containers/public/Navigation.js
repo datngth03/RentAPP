@@ -36,6 +36,9 @@ const Navigation = ({ isAdmin }) => {
                      </div>
                   );
                })}
+            <NavLink to={`/lien-he`} className={({ isActive }) => (isActive ? active : notActive)}>
+               Liên hệ
+            </NavLink>
          </div>
       </div>
    );

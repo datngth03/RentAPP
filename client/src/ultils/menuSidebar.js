@@ -21,12 +21,6 @@ const memuSidebar = [
       path: "/he-thong/sua-thong-tin-ca-nhan",
       icon: <BiUserPin />,
    },
-   {
-      id: 5,
-      text: "Liên hệ",
-      path: "/he-thong/lien-he",
-      icon: <BiUserPin />,
-   },
 ];
 
 export default memuSidebar;

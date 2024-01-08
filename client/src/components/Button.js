@@ -5,7 +5,6 @@ function Button({
    textColor,
    bgColor,
    Icon,
-   hoverBgColor,
    onClick,
    fullWidth,
    underlineOnHover,
@@ -18,7 +17,7 @@ function Button({
          className={`${width} px-2 py-2 ${className} ${textColor} ${bgColor} ${
             fullWidth && "w-full"
          } 
-         outline-none rounded-[4px] ${underlineOnHover && "hover:underline"} hover:${hoverBgColor}
+         outline-none rounded-[4px] ${underlineOnHover && "hover:underline"} 
          flex items-center justify-center`}
          onClick={onClick}
       >

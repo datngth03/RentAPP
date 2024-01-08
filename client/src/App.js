@@ -1,5 +1,13 @@
 import { Routes, Route } from "react-router-dom";
-import { Home, Login, Homepage, Rental, SearchDetail, DetailPost } from "./containers/public";
+import {
+   Home,
+   Login,
+   Homepage,
+   Rental,
+   SearchDetail,
+   DetailPost,
+   Contact,
+} from "./containers/public";
 import { System, CreatePost, ManagePost, EditAccount } from "./containers/system";
 import { path } from "./ultils/constant";
 import * as actions from "./store/actions";
@@ -20,7 +28,7 @@ function App() {
       dispatch(actions.getProvinces());
    }, []);
    return (
-      <div className="bg-primary overflow-y-hidden">
+      <div className="bg-primary ">
          <Routes>
             <Route path={path.HOME} element={<Home />}>
                <Route path="*" element={<Homepage />} />
@@ -31,7 +39,8 @@ function App() {
                <Route path={path.NHA_CHO_THUE} element={<Rental />} />
                <Route path={path.SEARCH} element={<SearchDetail />} />
                <Route path={path.DETAL_POST__TITLE__POSTID} element={<DetailPost />} />
-               <Route path={"chi-tiet/*"} element={<DetailPost />} />
+               <Route path={path.CONTACT} element={<Contact />} />
+               <Route path={path.DETAIL_ALL} element={<DetailPost />} />
             </Route>
             <Route path={path.SYSTEM} element={<System />}>
                <Route path={path.CREATE_POST} element={<CreatePost />} />

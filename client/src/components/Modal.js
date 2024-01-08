@@ -14,14 +14,14 @@ const Modal = ({
    setIsShowModal,
    defaultText,
 }) => {
-   const [persent1, setPersent1] = useState(
+   const [percent1, setPercent1] = useState(
       name === "price" && arrMinMax?.priceArr
          ? arrMinMax?.priceArr[0]
          : name === "area" && arrMinMax?.areaArr
          ? arrMinMax?.areaArr[0]
          : 0
    );
-   const [persent2, setPersent2] = useState(
+   const [percent2, setPercent2] = useState(
       name === "price" && arrMinMax?.priceArr
          ? arrMinMax?.priceArr[1]
          : name === "area" && arrMinMax?.areaArr
@@ -33,15 +33,15 @@ const Modal = ({
    useEffect(() => {
       const activedTrackEl = document.getElementById("track-active");
       if (activedTrackEl) {
-         if (persent2 <= persent1) {
-            activedTrackEl.style.left = `${persent2}%`;
-            activedTrackEl.style.right = `${100 - persent1}%`;
+         if (percent2 <= percent1) {
+            activedTrackEl.style.left = `${percent2}%`;
+            activedTrackEl.style.right = `${100 - percent1}%`;
          } else {
-            activedTrackEl.style.left = `${persent1}%`;
-            activedTrackEl.style.right = `${100 - persent2}%`;
+            activedTrackEl.style.left = `${percent1}%`;
+            activedTrackEl.style.right = `${100 - percent2}%`;
          }
       }
-   }, [persent1, persent2]);
+   }, [percent1, percent2]);
 
    const handleClickTrack = (e, value) => {
       setActivedEl("");
@@ -53,10 +53,10 @@ const Modal = ({
             : value === 100
             ? value
             : Math.round(((e.clientX - stackRect.left) * 100) / stackRect.width, 0);
-      if (Math.abs(percent - persent1) <= Math.abs(percent - persent2)) {
-         setPersent1(percent);
+      if (Math.abs(percent - percent1) <= Math.abs(percent - percent2)) {
+         setPercent1(percent);
       } else {
-         setPersent2(percent);
+         setPercent2(percent);
       }
    };
    const convert100toTarget = (percent) => {
@@ -75,27 +75,30 @@ const Modal = ({
       let arrMaxMin = name === "price" ? getNumbersPrice(value) : getNumbersArea(value);
       if (arrMaxMin.length === 1) {
          if (arrMaxMin[0] === 1) {
-            setPersent1(0);
-            setPersent2(convertto100(1));
+            setPercent1(0);
+            setPercent2(convertto100(1));
          }
          if (arrMaxMin[0] === 20) {
-            setPersent1(0);
-            setPersent2(convertto100(20));
+            setPercent1(0);
+            setPercent2(convertto100(20));
          }
          if (arrMaxMin[0] === 15 || arrMaxMin[0] === 90) {
-            setPersent1(100);
-            setPersent2(100);
+            setPercent1(100);
+            setPercent2(100);
          }
       }
       if (arrMaxMin.length === 2) {
-         setPersent1(convertto100(arrMaxMin[0]));
-         setPersent2(convertto100(arrMaxMin[1]));
+         setPercent1(convertto100(arrMaxMin[0]));
+         setPercent2(convertto100(arrMaxMin[1]));
       }
    };
    const handleBeforeSubmit = (e) => {
-      let min = persent1 <= persent2 ? persent1 : persent2;
-      let max = persent1 <= persent2 ? persent2 : persent1;
-      let arrMinMax = [convert100toTarget(min), convert100toTarget(max)];
+      let min = percent1 <= percent2 ? percent1 : percent2;
+      let max = percent1 <= percent2 ? percent2 : percent1;
+      let arrMinMax =
+         percent1 === percent2 && percent1 === 100
+            ? [convert100toTarget(min), 999999]
+            : [convert100toTarget(min), convert100toTarget(max)];
       // const gaps = name === 'price'
       //     ? getCodes(arrMinMax, content)
       //     : name === 'area' ? getCodesArea(arrMinMax, content) : []
@@ -103,9 +106,11 @@ const Modal = ({
          e,
          {
             [`${name}Number`]: arrMinMax,
-            [name]: `Từ ${convert100toTarget(min)} - ${convert100toTarget(max)} ${
-               name === "price" ? "triệu" : "m2"
-            }`,
+            [name]: `${
+               percent1 === percent2 && percent1 === 100 ? "Trên" : "Từ"
+            } ${convert100toTarget(min)} ${
+               percent1 === percent2 && percent1 === 100 ? "" : ` - ${convert100toTarget(max)}`
+            } ${name === "price" ? "triệu" : "m2"}`,
          },
          {
             [`${name}Arr`]: [min, max],
@@ -179,18 +184,18 @@ const Modal = ({
                <div className="p-12 py-20 ">
                   <div className="flex flex-col items-center justify-center relative">
                      <div className="z-30 absolute top-[-48px] font-bold text-xl text-orange-600">
-                        {persent1 === 100 && persent2 === 100
-                           ? `Trên ${convert100toTarget(persent1)} ${
+                        {percent1 === 100 && percent2 === 100
+                           ? `Trên ${convert100toTarget(percent1)} ${
                                 name === "price" ? "triệu" : "m2"
                              } +`
                            : `Từ ${
-                                persent1 <= persent2
-                                   ? convert100toTarget(persent1)
-                                   : convert100toTarget(persent2)
+                                percent1 <= percent2
+                                   ? convert100toTarget(percent1)
+                                   : convert100toTarget(percent2)
                              } - ${
-                                persent2 >= persent1
-                                   ? convert100toTarget(persent2)
-                                   : convert100toTarget(persent1)
+                                percent2 >= percent1
+                                   ? convert100toTarget(percent2)
+                                   : convert100toTarget(percent1)
                              } ${name === "price" ? "triệu" : "m2"}`}
                      </div>
                      <div
@@ -208,10 +213,10 @@ const Modal = ({
                         min="0"
                         step="1"
                         type="range"
-                        value={persent1}
+                        value={percent1}
                         className="w-full appearance-none pointer-events-none absolute top-[2px] bottom-0"
                         onChange={(e) => {
-                           setPersent1(+e.target.value);
+                           setPercent1(+e.target.value);
                            activedEl && setActivedEl("");
                         }}
                      />
@@ -220,10 +225,10 @@ const Modal = ({
                         min="0"
                         step="1"
                         type="range"
-                        value={persent2}
+                        value={percent2}
                         className="w-full appearance-none pointer-events-none absolute top-[2px] bottom-0"
                         onChange={(e) => {
-                           setPersent2(+e.target.value);
+                           setPercent2(+e.target.value);
                            activedEl && setActivedEl("");
                         }}
                      />

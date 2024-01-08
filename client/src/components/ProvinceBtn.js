@@ -2,9 +2,27 @@
 
 import React, { memo } from "react";
 
-const ProvinceBtn = ({ name, image }) => {
+import { useSelector, useDispatch } from "react-redux";
+import { useNavigate, createSearchParams, useLocation } from "react-router-dom";
+import { path } from "../ultils/constant";
+
+const ProvinceBtn = ({ name, image, provinceCode }) => {
+   const navigate = useNavigate();
+   const handleClick = () => {
+      let titleSearch = `Cho thuê ${name}, Phòng trọ giá rẻ`;
+      navigate(
+         {
+            pathname: path.SEARCH,
+            search: createSearchParams({ provinceCode }).toString(),
+         },
+         { state: { titleSearch } }
+      );
+   };
    return (
-      <div className="shadow-md overflow-hidden text-blue-700 cursor-pointer hover:text-orange-600 rounded-tl-md rounded-tr-md">
+      <div
+         className="shadow-md overflow-hidden text-blue-700 cursor-pointer hover:text-orange-600 rounded-tl-md rounded-tr-md"
+         onClick={handleClick}
+      >
          <div className="relative">
             <img
                src={image}

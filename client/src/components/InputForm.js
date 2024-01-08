@@ -1,9 +1,9 @@
 import React, { memo } from "react";
 
-function InputForm({ label, value, setValue, type, invalidFields, setInvalidFields }) {
+function InputForm({ label, value, setValue, type, invalidFields, setInvalidFields, text }) {
    return (
       <div>
-         <label className="text-xs" htmlFor="label">
+         <label className="text-sm" htmlFor="label">
             {label}
          </label>
          <input
@@ -13,9 +13,9 @@ function InputForm({ label, value, setValue, type, invalidFields, setInvalidFiel
             className="outline-none bg-[#e8f0fe] p-2 rounded-md w-full"
             value={value}
             onChange={(e) => setValue((prev) => ({ ...prev, [type]: e.target.value }))}
-            onFocus={() => setInvalidFields([])}
+            onFocus={() => setInvalidFields && setInvalidFields([])}
          />
-         {invalidFields.length > 0 && invalidFields.some((i) => i.name === type) && (
+         {invalidFields?.some((i) => i.name === type) && (
             <small className="text-red-500 italic">
                {invalidFields.find((i) => i.name === type)?.message}
             </small>

@@ -101,7 +101,9 @@ const ManagePost = () => {
             <tbody>
                {posts.length === 0 ? (
                   <tr>
-                     <td colSpan={7}>Bạn chưa có tin đăng nào!</td>
+                     <td className="p-4" colSpan={7}>
+                        Bạn chưa có tin đăng nào!
+                     </td>
                   </tr>
                ) : (
                   posts.map((item) => {

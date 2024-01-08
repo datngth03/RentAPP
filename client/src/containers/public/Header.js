@@ -45,6 +45,22 @@ function Header() {
          headerRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
       }
    }, [categories, location.pathname]);
+
+   const closeMenu = () => {
+      setIsShowMenu(false);
+   };
+   useEffect(() => {
+      const handleClickOutside = (event) => {
+         if (headerRef.current && !headerRef.current.contains(event.target)) {
+            closeMenu();
+         }
+      };
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => {
+         document.removeEventListener("mousedown", handleClickOutside);
+      };
+   }, []);
+
    return (
       <div ref={headerRef} className="w-4/5 ">
          <div className="w-full flex items-center justify-between">
@@ -115,6 +131,7 @@ function Header() {
                   bgColor="bg-secondary2"
                   IcAfter={AiOutlinePlusCircle}
                   underlineOnHover={true}
+                  onClick={() => navigate("/he-thong/tao-moi-bai-dang")}
                />
             </div>
          </div>
