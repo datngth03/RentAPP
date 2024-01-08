@@ -2,7 +2,6 @@ import express from "express";
 import cors from "cors";
 import initRouter from "./src/routes";
 import connectDatabase from "./src/config/connectDatabase";
-import generateDate from "../server/src/utlis/generateDate";
 require("dotenv").config();
 
 const app = express();

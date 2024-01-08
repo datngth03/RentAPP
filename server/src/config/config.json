@@ -1,24 +1,30 @@
 {
    "development": {
-      "username": "root",
-      "password": null,
-      "database": "phongtro",
-      "host": "127.0.0.1",
-      "dialect": "mysql",
-      "logging": false
-   },
-   "test": {
-      "username": "root",
-      "password": null,
-      "database": "database_test",
-      "host": "127.0.0.1",
-      "dialect": "mysql"
+      "username": "db_phongtro_e2v1_user",
+      "password": "VroAhlN3v6yWZHKyzThnzWNXCSDnAYOf",
+      "database": "db_phongtro_e2v1",
+      "host": "dpg-cmdsrigcmk4c73amnpa0-a.singapore-postgres.render.com",
+      "dialect": "postgres",
+      "logging": false,
+      "dialectOptions": {
+         "ssl": {
+            "require": true,
+            "rejectUnauthorized": false
+         }
+      }
    },
    "production": {
-      "username": "root",
-      "password": null,
-      "database": "database_production",
-      "host": "127.0.0.1",
-      "dialect": "mysql"
+      "username": "db_phongtro_e2v1_user",
+      "password": "VroAhlN3v6yWZHKyzThnzWNXCSDnAYOf",
+      "database": "db_phongtro_e2v1",
+      "host": "dpg-cmdsrigcmk4c73amnpa0-a.singapore-postgres.render.com",
+      "dialect": "postgres",
+      "logging": false,
+      "dialectOptions": {
+         "ssl": {
+            "require": true,
+            "rejectUnauthorized": false
+         }
+      }
    }
 }
