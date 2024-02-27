@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams, useNavigate, createSearchParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getPostsLimit } from "../../store/actions";
-import { SlickSlider, BoxInfo, RelatedPost, Map } from "../../components";
+// import { SlickSlider, BoxInfo, RelatedPost, Map } from "../../components";
+import { SlickSlider, BoxInfo, RelatedPost } from "../../components";
 import icons from "../../ultils/icons";
 import { path } from "../../ultils/constant";
 
@@ -55,7 +56,7 @@ const DetailPost = () => {
                   <MdLocationOn style={{ color: "blue" }} />
                   <address>{posts[0]?.address}</address>
                </div>
-               <div className="flex items-center justify-between w-3/5">
+               <div className="flex items-center justify-between w-4/5">
                   <span className="flex items-center gap-1">
                      <GiMoneyStack style={{ color: "grey" }} />
                      <span className="text-green-500 text-xl font-bold">
@@ -148,7 +149,8 @@ const DetailPost = () => {
             </div>
             <div className="flex flex-col p-6 pt-0 relative">
                <h2 className="font-semibold text-xl pb-4">Bản đồ</h2>
-               {posts[0] && <Map address={posts[0].address} />}
+               {/* {posts[0] && <Map address={posts[0].address} />} */}
+               {posts[0]}
 
                <div className="pt-8 text-gray-500">
                   Bạn đang xem nội dung tin đăng:{" "}
